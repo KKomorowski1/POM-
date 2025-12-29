@@ -1,0 +1,14 @@
+[
+  {
+    "product_name": "Sauce Labs Backpack",
+    "cart_badge_expected": "1"
+  },
+  {
+    "product_name": "Sauce Labs Bike Light",
+    "cart_badge_expected": "1"
+  },
+  {
+    "product_name": "Sauce Labs Fleece Jacket",
+    "cart_badge_expected": "1"
+  }
+]

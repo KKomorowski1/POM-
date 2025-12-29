@@ -1,0 +1,14 @@
+[
+  {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "scenario": "valid_login",
+    "expected_result": "inventory"
+  },
+  {
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "scenario": "locked_user",
+    "expected_result": "Epic sadface"
+  }
+]
