@@ -1,3 +1,4 @@
 allure-results/*
 venv
 **/.pytest_cache
+**/__pycache__
