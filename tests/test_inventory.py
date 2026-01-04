@@ -46,6 +46,6 @@ class TestInventory:
         inventory_page.get_all_products()
         default_sort = inventory_page.get_title_for_all_products()
         inventory_page.sort_by('za')
-        sorted_za =  inventory_page.get_title_for_all_products()
+        sorted_za = inventory_page.get_title_for_all_products()
 
         assert sorted(default_sort, reverse = True) == sorted_za, f"Ordering A-Z failed"
