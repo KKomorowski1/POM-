@@ -1,13 +1,13 @@
 name: Run Selenium Tests
 
 on:
-  # Run automatically when code is pushed to main
+  # Run automatically when code is pushed to master
   push:
-    branches: [ main ]
+    branches: [ master ]
   
   # Run automatically when someone makes a Pull Request
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
   # Run manually when you click the button (Workflow Dispatch)
   workflow_dispatch: 
