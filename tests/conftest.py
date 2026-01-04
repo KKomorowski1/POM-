@@ -31,7 +31,7 @@ def driver():
 
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option('useAutomationExtension', False)
-    if Config.HEADLESS:
+    if True:
         options.add_argument("--headless")
         options.add_argument("--no-sandbox")              # Required for Linux/CI
         options.add_argument("--disable-dev-shm-usage")   # Overcome limited resource problems
