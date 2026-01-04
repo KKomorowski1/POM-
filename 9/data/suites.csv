@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","81","test_add_product[data2]","tests","Sun Jan 04 20:23:08 UTC 2026","passed","Sun Jan 04 20:23:08 UTC 2026","TestInventory","test_inventory","",""
+"","479","test_login_ddt[data0]","tests","Sun Jan 04 20:23:10 UTC 2026","passed","Sun Jan 04 20:23:11 UTC 2026","TestLogin","test_login","",""
+"","78","test_add_product[data1]","tests","Sun Jan 04 20:23:07 UTC 2026","passed","Sun Jan 04 20:23:07 UTC 2026","TestInventory","test_inventory","",""
+"","491","test_login_ddt[data1]","tests","Sun Jan 04 20:23:11 UTC 2026","passed","Sun Jan 04 20:23:11 UTC 2026","TestLogin","test_login","",""
+"","76","test_add_product[data0]","tests","Sun Jan 04 20:23:06 UTC 2026","passed","Sun Jan 04 20:23:06 UTC 2026","TestInventory","test_inventory","",""
+"","246","test_sorting","tests","Sun Jan 04 20:23:09 UTC 2026","passed","Sun Jan 04 20:23:10 UTC 2026","TestInventory","test_inventory","",""
