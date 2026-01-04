@@ -13,3 +13,16 @@ class InventoryPage(BasePage):
     @allure.step("Getting cart item count")
     def get_cart_count(self):
         return self.get_text(InventoryLocators.CART_BADGE)
+    
+    @allure.step("Get list of all products on inventory page")
+    def get_all_products(self):
+        return self.find_elements(InventoryLocators.LIST_OF_PRODUCTS)
+    
+    @allure.step("Get title of all products")
+    def get_title_for_all_products(self):
+        elements = self.find_elements(InventoryLocators.LIST_OF_PRODUCTS)
+        return [element.text for element in elements]
+        
+    @allure.step("Sorting inventory by: {value}")
+    def sort_by(self, value):
+        self.select_by_value(InventoryLocators.SORT_DROPDOWN, value)

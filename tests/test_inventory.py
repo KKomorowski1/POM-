@@ -39,3 +39,13 @@ class TestInventory:
         inventory_page.add_to_cart(data['product_name'])
         
         assert inventory_page.get_cart_count() == data['cart_badge_expected']
+
+    @allure.story("Check sorting")
+    def test_sorting(self, driver):
+        inventory_page =  InventoryPage(driver)
+        inventory_page.get_all_products()
+        default_sort = inventory_page.get_title_for_all_products()
+        inventory_page.sort_by('za')
+        sorted_za =  inventory_page.get_title_for_all_products()
+
+        assert sorted(default_sort, reverse = True) == sorted_za, f"Ordering A-Z failed"
