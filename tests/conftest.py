@@ -33,7 +33,9 @@ def driver():
     options.add_experimental_option('useAutomationExtension', False)
     if Config.HEADLESS:
         options.add_argument("--headless")
-    
+        options.add_argument("--no-sandbox")              # Required for Linux/CI
+        options.add_argument("--disable-dev-shm-usage")   # Overcome limited resource problems
+        options.add_argument("--window-size=1920,1080")   # Prevent "element not visible" errors    
     # Automatically manages driver binary
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
